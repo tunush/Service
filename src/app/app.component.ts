@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'service';
+  animals = [
+    {
+      name: "Енот",
+      isSold: false
+    },
+    {
+      name: "Хомяк",
+      isSold: false
+    },
+    {
+      name: "Попугай",
+      isSold: false
+    }
+  ]
+  
+  addAnimalInList(animalName:string) {
+    this.animals.push({
+      name: animalName,
+      isSold: false
+    });
+  }
 }

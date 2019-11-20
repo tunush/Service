@@ -1,0 +1,5 @@
+<form class="form-inline" [ngStyle]="{'margin-bottom': '20px'}">
+    <input class="form-control" [ngStyle]="{'width': '90%'}" type="text" [(ngModel)] = "animalName" name="animal">
+    <button class="btn btn-success" [ngStyle]="{'width': '10%'}" (click) = "addAnimal()">Add</button>
+</form>
+
